@@ -10,3 +10,7 @@ Make second argument as optional and check for results from mutant.
 ## Phase 3
 
 Make code to display name without space after name when there is no surname
+
+## Phase 4
+
+Create method `peter?` that will tell that name of the person is equal to Peter

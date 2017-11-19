@@ -5,6 +5,6 @@ class Person
   end
 
   def say_hello
-    "#{@name} #{@surname}"
+    [@name, @surname].compact.join(' ')
   end
 end

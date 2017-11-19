@@ -17,7 +17,7 @@ describe Person do
       subject { described_class.new(name) }
 
       it 'returns only name when there is only name' do
-        expect(subject.say_hello).to eq('Peter ')
+        expect(subject.say_hello).to eq('Peter')
       end
     end
   end
