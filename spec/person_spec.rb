@@ -20,6 +20,22 @@ describe Person do
         expect(subject.say_hello).to eq('Peter')
       end
     end
+
+    context 'non-capital letters name' do
+      let(:name) { 'peter' }
+
+      it 'return user full name' do
+        expect(subject.say_hello).to eq('Peter Toptal')
+      end
+    end
+
+    context 'non-capital letter surname' do
+      let(:surname) { 'toptal' }
+
+      it 'return user full name' do
+        expect(subject.say_hello).to eq('Peter Toptal')
+      end
+    end
   end
 
   describe '#peter?' do

@@ -24,3 +24,7 @@ Improve tests to make sure that is testing other cases than Peter.
 
 Make it work for name and surname without first capital letter. But still should
 display name and surname with first capital letter. Remember about `#peter?` method.
+
+## Phase 5
+
+Create method `double_surname?` that checks for surname divided by space of `-`.

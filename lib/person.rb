@@ -1,7 +1,7 @@
 class Person
   def initialize(name, surname = nil)
-    @name = name
-    @surname = surname
+    @name = name.capitalize
+    @surname = surname&.capitalize
   end
 
   def say_hello
