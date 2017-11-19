@@ -10,5 +10,15 @@ describe Person do
     it 'return user full name' do
       expect(subject.say_hello).to eq('Peter Toptal')
     end
+
+    context 'there is no surname' do
+      let(:surname) { nil }
+
+      subject { described_class.new(name) }
+
+      it 'returns only name when there is only name' do
+        expect(subject.say_hello).to eq('Peter ')
+      end
+    end
   end
 end
