@@ -7,4 +7,8 @@ class Person
   def say_hello
     [@name, @surname].compact.join(' ')
   end
+
+  def peter?
+    @name == 'Peter'
+  end
 end

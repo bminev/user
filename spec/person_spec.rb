@@ -21,4 +21,16 @@ describe Person do
       end
     end
   end
+
+  describe '#peter?' do
+    subject { described_class.new(name) }
+
+    context 'name is Peter' do
+      let(:name) { 'Peter' }
+
+      it 'returns true' do
+        expect(subject.peter?).to be_truthy
+      end
+    end
+  end
 end

@@ -14,3 +14,8 @@ Make code to display name without space after name when there is no surname
 ## Phase 4
 
 Create method `peter?` that will tell that name of the person is equal to Peter
+and make test for 'Peter' name.
+
+## Phase 5
+
+Improve tests to make sure that is testing other cases than Peter.
