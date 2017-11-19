@@ -32,5 +32,13 @@ describe Person do
         expect(subject.peter?).to be_truthy
       end
     end
+
+    context 'name is not Peter' do
+      let(:name) { 'Boris' }
+
+      it 'returns false' do
+        expect(subject.peter?).to be_falsey
+      end
+    end
   end
 end

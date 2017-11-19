@@ -19,3 +19,8 @@ and make test for 'Peter' name.
 ## Phase 5
 
 Improve tests to make sure that is testing other cases than Peter.
+
+## Phase 6
+
+Make it work for name and surname without first capital letter. But still should
+display name and surname with first capital letter. Remember about `#peter?` method.

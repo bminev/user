@@ -9,6 +9,6 @@ class Person
   end
 
   def peter?
-    @name == 'Peter'
+    @name.eql?('Peter')
   end
 end
