@@ -1,5 +1,5 @@
-require "user/version"
+require 'user/version'
+require 'person'
 
 module User
-  # Your code goes here...
 end
