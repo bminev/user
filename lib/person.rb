@@ -11,4 +11,8 @@ class Person
   def peter?
     @name.eql?('Peter')
   end
+
+  def double_surname?
+    @surname.include?(' ') || @surname.include?('-')
+  end
 end

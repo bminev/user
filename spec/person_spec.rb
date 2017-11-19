@@ -57,4 +57,34 @@ describe Person do
       end
     end
   end
+
+  describe '#double_surname?' do
+    subject { described_class.new(name, surname) }
+
+    let(:name) { 'Peter' }
+
+    context 'there is `-` in surname' do
+      let(:surname) { 'Minev-Nielacny' }
+
+      it 'returns true' do
+        expect(subject.double_surname?).to be_truthy
+      end
+    end
+
+    context 'there is ` ` in surname' do
+      let(:surname) { 'Minev Nielacny' }
+
+      it 'returns true' do
+        expect(subject.double_surname?).to be_truthy
+      end
+    end
+
+    context 'there is no double surname' do
+      let(:surname) { 'Minev' }
+
+      it 'returns false' do
+        expect(subject.double_surname?).to be_falsey
+      end
+    end
+  end
 end
